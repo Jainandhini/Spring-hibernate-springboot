@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- load properties file -->
+<context:property-placeholder location="classpath:sport.properties"/>
+    <!-- Define your beans here -->
+    <bean id="fortuneService" class ="com.ioc.xml.eg.FortuneService"></bean>
+    <bean id="basketCoach" class ="com.ioc.xml.eg.BasketBallCoach">
+    	<constructor-arg ref="fortuneService"></constructor-arg>
+    </bean>
+    <bean id="soccerCoach" class ="com.ioc.xml.eg.SoccerCoach">
+    <property name="fortuneService" ref="fortuneService"></property>
+    <property name ="email" value = "${test.email}"></property>
+    <property name ="name" value = "jai"></property>
+    </bean>
+    
+    
+</beans>
+
+
+
+
+

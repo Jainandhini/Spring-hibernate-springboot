@@ -1,0 +1,12 @@
+Within Init method - BasketBallCoach
+Singleton bean scope examples....
+bCoach1==bCoach2 : true
+Addr of bCoach1: com.bean.scope.xml.BasketBallCoach@672872e1
+Addr of bCoach2: com.bean.scope.xml.BasketBallCoach@672872e1
+Prototype bean scope examples....
+Within Init method - SoccerCoach
+Within Init method - SoccerCoach
+sCoach1==sCoach2 : false
+Addr of sCoach1: com.bean.scope.xml.SoccerCoach@3f56875e
+Addr of sCoach2: com.bean.scope.xml.SoccerCoach@2b4bac49
+Within Destroy method - BasketBallCoach

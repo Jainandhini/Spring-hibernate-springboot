@@ -1,0 +1,22 @@
+Inside fortune service constructor...
+Inversion of Control examples....
+Welcome to hoop world!
+Welcome to Kick world!
+
+Constructor dependency injection examples
+Welcome to hoop world!
+Fortune 1: Keep it up; you are almost there!
+Fortune 2 Today is your lucky day
+Fortune 3: Be the best version of yourself, everything else will follow
+
+Setter dependency injection examples
+Welcome to Kick world!
+Fortune 1: Be the best version of yourself, everything else will follow
+Fortune 2 Be the best version of yourself, everything else will follow
+Fortune 3: Be the best version of yourself, everything else will follow
+
+Set property value from config examples
+Name: jai
+
+Set property value from properties file examples
+Email: "xxx@yy.com"

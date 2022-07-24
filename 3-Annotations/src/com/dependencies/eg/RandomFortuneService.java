@@ -18,6 +18,7 @@ public class RandomFortuneService implements IFortuneService {
 		fortunes[2] = "Be the best version of yourself, everything else will follow";
 	}
 	
+	@Override
 	public String getFortune() {
 		int index = random.nextInt(fortunes.length);
 

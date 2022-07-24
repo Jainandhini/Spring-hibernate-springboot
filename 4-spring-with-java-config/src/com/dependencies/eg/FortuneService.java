@@ -11,7 +11,7 @@ public class FortuneService implements IFortuneService {
 	
 	Random random = new Random();
 	
-	FortuneService() {
+	public FortuneService() {
 		System.out.println("Inside fortune service constructor...");
 		fortunes[0] = "Today is your lucky day";
 		fortunes[1] = "Keep it up; you are almost there!";
